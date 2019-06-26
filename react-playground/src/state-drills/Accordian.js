@@ -27,8 +27,8 @@ class Accordian extends React.Component {
     }
 
     render() {
-        let accordianItems = this.props.sections.map((items, i) => {
-        return <AccordianItem lastIndex={this.state.lastIndex} handleClick={this.handleClick} key={i} id={i} title={items.title} content={items.content}/>
+        let accordianItems = this.props.sections.map((item, i) => {
+        return <AccordianItem lastIndex={this.state.lastIndex} handleClick={this.handleClick} key={i} id={i} title={item.title} content={item.content}/>
         });
         console.log(accordianItems);
         return (
